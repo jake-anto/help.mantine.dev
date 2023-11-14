@@ -317,6 +317,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantine/code-highlight@npm:^7.2.2":
+  version: 7.2.2
+  resolution: "@mantine/code-highlight@npm:7.2.2"
+  dependencies:
+    clsx: "npm:2.0.0"
+    highlight.js: "npm:^11.7.0"
+  peerDependencies:
+    "@mantine/core": 7.2.2
+    "@mantine/hooks": 7.2.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: ab98547ac1339c4d734976e188e4261909f47576ceb05d70161f1d1220968e8b70c1731185194f2b3465caf430f21b73b38c40a461567baf91dac64a01717a32
+  languageName: node
+  linkType: hard
+
 "@mantine/core@npm:7.2.2":
   version: 7.2.2
   resolution: "@mantine/core@npm:7.2.2"
@@ -332,6 +347,22 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
   checksum: dc71d65dca0b4517eb75c053a51570bf5f6511b68e0c65631379878b575839719a7b5610c61d5bf5f268796c43123b4b627cce075f814ffc26f97153b43fd53e
+  languageName: node
+  linkType: hard
+
+"@mantine/ds@npm:^7.2.2":
+  version: 7.2.2
+  resolution: "@mantine/ds@npm:7.2.2"
+  dependencies:
+    clsx: "npm:2.0.0"
+  peerDependencies:
+    "@mantine/code-highlight": 7.2.2
+    "@mantine/core": 7.2.2
+    "@mantine/hooks": 7.2.2
+    "@tabler/icons-react": ^2.29.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: f8730b2d4417859ce01e5c6787bf06793f78b2f04e5df612196ac2933155474eb0bb39acb18daaa4e74f94e51a0a80ee0d0e44e0c911f3b744d2fa95e054fca6
   languageName: node
   linkType: hard
 
@@ -578,6 +609,25 @@ __metadata:
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: b6fa49bcf6c00571d0eb7837b163f8609960d4d77538160585e27ed167361e9776bd6e5eb9646ffac2fb4d43c58df9ca50dab9d96ab097e6591bc82a75fd1164
+  languageName: node
+  linkType: hard
+
+"@tabler/icons-react@npm:^2.40.0":
+  version: 2.40.0
+  resolution: "@tabler/icons-react@npm:2.40.0"
+  dependencies:
+    "@tabler/icons": "npm:2.40.0"
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: 3deb43e6d474ff2d09ff941d3d8b66c8898b08c25b5cd7c3b3cb693fc88ede9404e06950647083db3287f7ae361495bbb99b828466f458d57ef4f16cbbb89d27
+  languageName: node
+  linkType: hard
+
+"@tabler/icons@npm:2.40.0":
+  version: 2.40.0
+  resolution: "@tabler/icons@npm:2.40.0"
+  checksum: a59adf9b071fb3b54f507c3a7c8adaeb74ccb5af5834c92d312829f7564f1e4255086091fe43dbfeae256510d073bce8476f2171655b337050b08b7521786400
   languageName: node
   linkType: hard
 
@@ -3074,11 +3124,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "help.mantine.dev@workspace:."
   dependencies:
+    "@mantine/code-highlight": "npm:^7.2.2"
     "@mantine/core": "npm:7.2.2"
+    "@mantine/ds": "npm:^7.2.2"
     "@mantine/hooks": "npm:7.2.2"
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.2"
+    "@tabler/icons-react": "npm:^2.40.0"
     "@types/mdx": "npm:^2.0.10"
     "@types/node": "npm:20.9.0"
     "@types/react": "npm:18.2.37"
@@ -3107,6 +3160,13 @@ __metadata:
     typescript: "npm:5.2.2"
   languageName: unknown
   linkType: soft
+
+"highlight.js@npm:^11.7.0":
+  version: 11.9.0
+  resolution: "highlight.js@npm:11.9.0"
+  checksum: 27cfa8717dc9d200aecbdb383eb122d5f45ce715d2f468583785d36fbfe5076ce033abb02486dc13b407171721cda6f474ed3f3a5a8e8c3d91367fa5f51ee374
+  languageName: node
+  linkType: hard
 
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1

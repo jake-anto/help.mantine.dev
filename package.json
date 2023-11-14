@@ -15,10 +15,13 @@
     "deploy": "npm run docs:build && gh-pages -d docs/out -t true"
   },
   "dependencies": {
+    "@mantine/code-highlight": "^7.2.2",
     "@mantine/core": "7.2.2",
+    "@mantine/ds": "^7.2.2",
     "@mantine/hooks": "7.2.2",
     "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^14.0.2",
+    "@tabler/icons-react": "^2.40.0",
     "next": "14.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
