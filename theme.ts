@@ -1,5 +1,12 @@
 import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  headings: {
+    fontFamily: 'Greycliff CF, var(--mantine-font-family)',
+    sizes: {
+      h1: {
+        fontWeight: '900',
+      },
+    },
+  },
 });

@@ -1,0 +1,24 @@
+.header {
+  padding-top: rem(80px);
+  padding-bottom: rem(60px);
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+  margin-bottom: var(--mantine-spacing-xl);
+
+  @mixin smaller-than $mantine-breakpoint-sm {
+    padding-top: rem(60px);
+    padding-bottom: rem(40px);
+  }
+}
+
+.title {
+  font-size: rem(50px);
+  text-wrap: balance;
+
+  @mixin smaller-than $mantine-breakpoint-sm {
+    font-size: rem(32px);
+  }
+}
+
+.links {
+  margin-top: var(--mantine-spacing-lg);
+}

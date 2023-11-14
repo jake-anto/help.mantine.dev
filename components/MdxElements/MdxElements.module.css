@@ -33,11 +33,6 @@
   @mixin dark {
     color: var(--mantine-color-white);
   }
-
-  &[data-order='1'] {
-    font-size: rem(40px);
-    margin-top: 0;
-  }
 }
 
 .titleLink {
