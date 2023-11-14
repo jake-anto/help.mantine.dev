@@ -1,5 +1,5 @@
 .header {
-  padding-top: rem(80px);
+  padding-top: rem(20px);
   padding-bottom: rem(60px);
   background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
   margin-bottom: var(--mantine-spacing-xl);
@@ -11,6 +11,7 @@
 }
 
 .title {
+  margin-top: rem(30px);
   font-size: rem(50px);
   text-wrap: balance;
 

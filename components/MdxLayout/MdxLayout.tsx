@@ -1,5 +1,6 @@
-import { Container, Title } from '@mantine/core';
-import { IconPencil, IconBug } from '@tabler/icons-react';
+import Link from 'next/link';
+import { Anchor, Container, Title, Center } from '@mantine/core';
+import { IconPencil, IconBug, IconArrowLeft } from '@tabler/icons-react';
 import { Frontmatter } from '@/types';
 import { PageHeaderLink } from './PageHeaderLink/PageHeaderLink';
 import classes from './MdxLayout.module.css';
@@ -14,9 +15,16 @@ export function MdxLayout({ meta, children }: MdxLayoutProps) {
     <article>
       <header className={classes.header}>
         <Container size="md">
+          <Anchor component={Link} href="/" underline="hover" fz="sm">
+            <Center inline component="span" style={{ gap: 5 }}>
+              <IconArrowLeft size={18} stroke={1.5} />
+              <span>Back to all questions</span>
+            </Center>
+          </Anchor>
+
           <Title className={classes.title}>{meta.title}</Title>
 
-          <div className={classes.links}>
+          <nav className={classes.links}>
             <PageHeaderLink
               icon={<IconPencil size={18} stroke={1.5} />}
               link={`https://github.com/mantinedev/help.mantine.dev/${meta.slug}`}
@@ -29,7 +37,7 @@ export function MdxLayout({ meta, children }: MdxLayoutProps) {
             >
               Report issue with the article
             </PageHeaderLink>
-          </div>
+          </nav>
         </Container>
       </header>
       <Container size="md">{children}</Container>
