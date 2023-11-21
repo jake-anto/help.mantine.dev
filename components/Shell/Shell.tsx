@@ -10,7 +10,9 @@ import {
   Anchor,
   Text,
 } from '@mantine/core';
-import { ColorSchemeControl, HeaderControls, MantineLogo } from '@mantine/ds';
+import { MantineLogo } from '@mantinex/mantine-logo';
+import { ColorSchemeControl, HeaderControls } from '@mantinex/mantine-header';
+import { meta } from '@mantinex/mantine-meta';
 import classes from './Shell.module.css';
 
 interface ShellProps {
@@ -34,6 +36,7 @@ export function Shell({ children }: ShellProps) {
             githubLink="https://github.com/mantine.dev/mantine"
             withDirectionToggle={false}
             withSearch={false}
+            discordLink={meta.discordLink}
           />
 
           <Group hiddenFrom="sm">

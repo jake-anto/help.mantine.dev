@@ -1,7 +1,9 @@
 import '../fonts/GreycliffCF/styles.css';
 import '@mantine/core/styles.css';
 import '@mantine/code-highlight/styles.css';
-import '@mantine/ds/styles.css';
+import '@mantinex/demo/styles.css';
+import '@mantinex/mantine-logo/styles.css';
+import '@mantinex/mantine-header/styles.css';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { Shell } from '../components/Shell';
