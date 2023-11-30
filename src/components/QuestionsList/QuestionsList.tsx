@@ -14,13 +14,15 @@ export function QuestionsList({ data }: QuestionsListProps) {
   const groupedQuestions = getGroupedQuestions(data, search);
 
   const groups = groupedQuestions.map(({ category, questions }) => (
-    <QuestionsListGroup key={category} category={category} questions={questions} />
+    <QuestionsListGroup key={category} category={category} questions={questions} search={search} />
   ));
 
   return (
     <>
       <QuestionsListHeader search={search} onSearchChange={setSearch} />
-      <Container size="md">{groups}</Container>
+      <Container size="md" mt={50}>
+        {groups}
+      </Container>
     </>
   );
 }
