@@ -32,13 +32,15 @@ export function MdxLayout({ meta, children }: MdxLayoutProps) {
             <nav className={classes.links}>
               <PageHeaderLink
                 icon={<IconPencil size={18} stroke={1.5} />}
-                link={`https://github.com/mantinedev/help.mantine.dev/${meta.slug}`}
+                link={`https://github.com/mantinedev/help.mantine.dev/blob/master/src/pages/q/${meta.slug}.mdx`}
               >
                 Edit this page on GitHub
               </PageHeaderLink>
               <PageHeaderLink
                 icon={<IconBug size={18} stroke={1.5} />}
-                link={`https://github.com/mantinedev/help.mantine.dev/${meta.slug}`}
+                link={`https://github.com/mantinedev/help.mantine.dev/issues/new?template=article_report.yml&title=${encodeURIComponent(
+                  `Issue with article ${meta.title}`
+                )}`}
               >
                 Report issue with the article
               </PageHeaderLink>
