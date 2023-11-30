@@ -50,6 +50,7 @@
   border-radius: var(--mantine-radius-md);
   margin-top: var(--mantine-spacing-md);
   margin-bottom: var(--mantine-spacing-md);
+  overflow: hidden;
 
   @mixin light {
     border-color: var(--mantine-color-gray-2);
