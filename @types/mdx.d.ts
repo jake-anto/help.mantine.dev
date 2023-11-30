@@ -1,3 +1,3 @@
 declare module '*.mdx' {
-  export const meta: import('../types').Frontmatter;
+  export const meta: import('../src/types').Frontmatter;
 }

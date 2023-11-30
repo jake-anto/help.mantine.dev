@@ -1,1 +1,1 @@
-export { useMDXComponents } from './components/MdxElements';
+export { useMDXComponents } from './src/components/MdxElements';

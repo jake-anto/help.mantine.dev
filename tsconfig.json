@@ -16,8 +16,8 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./*"],
-      "@/layout": ["./components/MdxLayout"]
+      "@/*": ["./src/*"],
+      "@/layout": ["./src/components/MdxLayout"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
