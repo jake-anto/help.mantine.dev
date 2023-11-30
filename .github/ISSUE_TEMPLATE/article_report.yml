@@ -1,4 +1,4 @@
-name: Report issue
+name: Article issue
 description: Report an issue with help.mantine.dev article
 body:
   - type: markdown
