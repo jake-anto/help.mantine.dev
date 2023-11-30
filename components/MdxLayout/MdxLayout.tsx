@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Anchor, Container, Title, Center } from '@mantine/core';
+import { Anchor, Container, Title, Center, Text } from '@mantine/core';
 import { IconPencil, IconBug, IconArrowLeft } from '@tabler/icons-react';
 import { Frontmatter } from '@/types';
 import { PageHeaderLink } from './PageHeaderLink/PageHeaderLink';
@@ -38,6 +38,18 @@ export function MdxLayout({ meta, children }: MdxLayoutProps) {
               Report issue with the article
             </PageHeaderLink>
           </nav>
+
+          <Text c="dimmed" fz="xs" mt="md">
+            Last updated{' '}
+            <Text
+              component="time"
+              dateTime={new Date(meta.last_updated_at).toLocaleDateString()}
+              c="var(--mantine-color-text)"
+              inherit
+            >
+              {meta.last_updated_at}
+            </Text>
+          </Text>
         </Container>
       </header>
       <Container size="md">{children}</Container>
