@@ -16,8 +16,8 @@
     "deploy": "npm run docs:build && gh-pages -d docs/out -t true"
   },
   "dependencies": {
-    "@mantine/core": "7.2.2",
-    "@mantine/hooks": "7.2.2",
+    "@mantine/core": "7.3.0-alpha.3",
+    "@mantine/hooks": "7.3.0-alpha.3",
     "@mantinex/demo": "^1.1.0",
     "@mantinex/dev-icons": "^1.0.2",
     "@mantinex/mantine-header": "^1.0.2",

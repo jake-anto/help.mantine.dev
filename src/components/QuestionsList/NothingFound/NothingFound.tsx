@@ -6,7 +6,10 @@ import classes from './NothingFound.module.css';
 export function NothingFound() {
   return (
     <section className={classes.root}>
-      <Title order={2}>Nothing found... But do not give up!</Title>
+      <Title order={2} c="bright">
+        Nothing found... But do not give up yet!
+      </Title>
+
       <Text className={classes.description}>
         Join Mantine community of 10,000+ developers on Discord or ask your questions on GitHub:{' '}
       </Text>
