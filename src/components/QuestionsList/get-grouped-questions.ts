@@ -61,6 +61,7 @@ export function getGroupedQuestions(questions: Frontmatter[], searchQuery: strin
 
       return aIndex - bIndex;
     })
+    .filter((key) => grouped[key].length)
     .map((key) => ({
       category: key,
       questions: grouped[key],

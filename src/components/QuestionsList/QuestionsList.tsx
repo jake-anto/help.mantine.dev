@@ -4,6 +4,7 @@ import { Frontmatter } from '@/types';
 import { getGroupedQuestions } from './get-grouped-questions';
 import { QuestionsListHeader } from './QuestionsListHeader/QuestionsListHeader';
 import { QuestionsListGroup } from './QuestionsListGroup/QuestionsListGroup';
+import { NothingFound } from './NothingFound/NothingFound';
 
 interface QuestionsListProps {
   data: Frontmatter[];
@@ -21,7 +22,7 @@ export function QuestionsList({ data }: QuestionsListProps) {
     <>
       <QuestionsListHeader search={search} onSearchChange={setSearch} />
       <Container size="md" mt={50}>
-        {groups}
+        {groups.length > 0 ? groups : <NothingFound />}
       </Container>
     </>
   );
