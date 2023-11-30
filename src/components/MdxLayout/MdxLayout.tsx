@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import { Anchor, Container, Title, Center, Text } from '@mantine/core';
 import { IconPencil, IconBug, IconArrowLeft } from '@tabler/icons-react';
 import { Frontmatter } from '@/types';
@@ -12,48 +13,53 @@ interface MdxLayoutProps {
 
 export function MdxLayout({ meta, children }: MdxLayoutProps) {
   return (
-    <article>
-      <header className={classes.header}>
-        <Container size="md">
-          <Anchor component={Link} href="/" underline="hover" fz="sm">
-            <Center inline component="span" style={{ gap: 5 }}>
-              <IconArrowLeft size={18} stroke={1.5} />
-              <span>Back to all questions</span>
-            </Center>
-          </Anchor>
+    <>
+      <Head>
+        <title>{`${meta.title} | Mantine`}</title>
+      </Head>
+      <article>
+        <header className={classes.header}>
+          <Container size="md">
+            <Anchor component={Link} href="/" underline="hover" fz="sm">
+              <Center inline component="span" style={{ gap: 5 }}>
+                <IconArrowLeft size={18} stroke={1.5} />
+                <span>Back to all questions</span>
+              </Center>
+            </Anchor>
 
-          <Title className={classes.title}>{meta.title}</Title>
+            <Title className={classes.title}>{meta.title}</Title>
 
-          <nav className={classes.links}>
-            <PageHeaderLink
-              icon={<IconPencil size={18} stroke={1.5} />}
-              link={`https://github.com/mantinedev/help.mantine.dev/${meta.slug}`}
-            >
-              Edit this page on GitHub
-            </PageHeaderLink>
-            <PageHeaderLink
-              icon={<IconBug size={18} stroke={1.5} />}
-              link={`https://github.com/mantinedev/help.mantine.dev/${meta.slug}`}
-            >
-              Report issue with the article
-            </PageHeaderLink>
-          </nav>
+            <nav className={classes.links}>
+              <PageHeaderLink
+                icon={<IconPencil size={18} stroke={1.5} />}
+                link={`https://github.com/mantinedev/help.mantine.dev/${meta.slug}`}
+              >
+                Edit this page on GitHub
+              </PageHeaderLink>
+              <PageHeaderLink
+                icon={<IconBug size={18} stroke={1.5} />}
+                link={`https://github.com/mantinedev/help.mantine.dev/${meta.slug}`}
+              >
+                Report issue with the article
+              </PageHeaderLink>
+            </nav>
 
-          <Text c="dimmed" fz="xs" mt="md">
-            Last updated{' '}
-            <Text
-              component="time"
-              dateTime={new Date(meta.last_updated_at).toLocaleDateString()}
-              c="var(--mantine-color-text)"
-              inherit
-            >
-              {meta.last_updated_at}
+            <Text c="dimmed" fz="xs" mt="md">
+              Last updated{' '}
+              <Text
+                component="time"
+                dateTime={new Date(meta.last_updated_at).toLocaleDateString()}
+                c="var(--mantine-color-text)"
+                inherit
+              >
+                {meta.last_updated_at}
+              </Text>
             </Text>
-          </Text>
-        </Container>
-      </header>
-      <Container size="md">{children}</Container>
-    </article>
+          </Container>
+        </header>
+        <Container size="md">{children}</Container>
+      </article>
+    </>
   );
 }
 
