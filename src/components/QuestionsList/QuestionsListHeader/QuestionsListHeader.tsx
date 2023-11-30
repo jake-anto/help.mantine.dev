@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { IconSearch } from '@tabler/icons-react';
 import { Container, Text, TextInput, Title } from '@mantine/core';
 import classes from './QuestionsListHeader.module.css';
@@ -9,6 +9,12 @@ interface QuestionsListHeaderProps {
 }
 
 export function QuestionsListHeader({ search, onSearchChange }: QuestionsListHeaderProps) {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
   return (
     <div className={classes.root}>
       <Container size="md">
@@ -29,7 +35,7 @@ export function QuestionsListHeader({ search, onSearchChange }: QuestionsListHea
           }}
           value={search}
           onChange={(event) => onSearchChange(event.currentTarget.value)}
-          autoFocus
+          ref={inputRef}
         />
       </Container>
     </div>
