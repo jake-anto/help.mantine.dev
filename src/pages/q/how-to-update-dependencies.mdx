@@ -6,7 +6,7 @@ export const meta = {
   category: 'tooling',
   tags: ['npm', 'yarn', 'package.json'],
   created_at: 'November 14, 2023',
-  last_updated_at: 'November 14, 2023',
+  last_updated_at: 'November 30, 2023',
 };
 
 export default Layout(meta);
@@ -16,7 +16,7 @@ export default Layout(meta);
 Run the following script to update `package.json` file:
 
 ```sh
-npx npm-check-updates @mantine/* postcss-preset-mantine -u
+npx npm-check-updates @mantine/* @mantinex/* postcss-preset-mantine -u
 ```
 
 Then install new dependencies with your package manager. For example, if
@@ -41,7 +41,7 @@ After the package is installed, run the following command to update `@mantine/*`
 dependencies:
 
 ```sh
-ncu @mantine/* postcss-preset-mantine -u
+ncu @mantine/* @mantinex/* postcss-preset-mantine -u
 ```
 
 ## Update dependencies manually
