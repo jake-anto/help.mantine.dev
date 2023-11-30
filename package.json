@@ -13,7 +13,7 @@
     "stylelint": "stylelint '**/*.css' --cache",
     "typecheck": "tsc --noEmit",
     "test": "npm run prettier:check && npm run typecheck && npm run eslint && npm run stylelint",
-    "deploy": "npm run docs:build && gh-pages -d docs/out -t true"
+    "deploy": "npm run build && gh-pages -d out -t true"
   },
   "dependencies": {
     "@mantine/core": "7.3.0-alpha.3",
