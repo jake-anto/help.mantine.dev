@@ -1,11 +1,6 @@
-import { Button, Group } from '@mantine/core';
+import { QuestionsList } from '@/components/QuestionsList';
 import { MDX_DATA } from '@/mdx';
 
 export default function IndexPage() {
-  console.log(MDX_DATA);
-  return (
-    <Group mt={50} justify="center">
-      <Button size="xl">Welcome to Mantine!</Button>
-    </Group>
-  );
+  return <QuestionsList data={MDX_DATA} />;
 }
