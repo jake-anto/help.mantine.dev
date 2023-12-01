@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Highlight } from '@mantine/core';
+import { Divider, Highlight } from '@mantine/core';
 import { Frontmatter } from '@/types';
 import classes from './QuestionsListGroup.module.css';
 
@@ -12,21 +12,21 @@ export interface QuestionsListGroupProps {
 
 export function QuestionsListGroup({ category, questions, search }: QuestionsListGroupProps) {
   const items = questions.map((question) => (
-    <Highlight
-      component={Link}
-      highlight={search}
-      key={question.slug}
-      href={`/q/${question.slug}`}
-      className={classes.question}
-    >
-      {question.title}
-    </Highlight>
+    <Link key={question.slug} href={`/q/${question.slug}`} className={classes.question}>
+      <Highlight highlight={search} className={classes.questionTitle}>
+        {question.title}
+      </Highlight>
+      <Highlight highlight={search} className={classes.questionDescription}>
+        {question.description}
+      </Highlight>
+    </Link>
   ));
 
   return (
     <section className={classes.group}>
-      <header>
+      <header className={classes.header}>
         <h2 className={classes.category}>{category}</h2>
+        <Divider className={classes.divider} />
       </header>
       {items}
     </section>

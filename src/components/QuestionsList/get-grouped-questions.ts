@@ -1,9 +1,9 @@
 import { Frontmatter } from '@/types';
 
-const categoriesOrder = ['general', 'tooling', 'forms'];
+const categoriesOrder = ['general', 'tooling', 'styles', 'forms', 'components'];
 
 function isMatched(question: Frontmatter, searchQuery: string) {
-  const { title, tags, category } = question;
+  const { title, tags, category, description } = question;
 
   const query = searchQuery.toLowerCase().trim();
 
@@ -12,6 +12,10 @@ function isMatched(question: Frontmatter, searchQuery: string) {
   }
 
   if (category.toLowerCase().includes(query)) {
+    return true;
+  }
+
+  if (description.toLowerCase().includes(query)) {
     return true;
   }
 
