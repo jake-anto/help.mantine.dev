@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@mantine/core": "7.3.0-alpha.3",
+    "@mantine/dropzone": "7.3.0-alpha.3",
+    "@mantine/form": "7.3.0-alpha.3",
     "@mantine/hooks": "7.3.0-alpha.3",
     "@mantinex/demo": "^1.1.0",
     "@mantinex/dev-icons": "^1.0.2",

@@ -1,5 +1,6 @@
 import '../fonts/GreycliffCF/styles.css';
 import '@mantine/core/styles.css';
+import '@mantine/dropzone/styles.css';
 import '@mantinex/shiki/styles.css';
 import '@mantinex/demo/styles.css';
 import '@mantinex/mantine-logo/styles.css';
