@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5809],{176:function(n,_,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/q/can-i-use-mantine-with-cra",function(){return u(9417)}])}},function(n){n.O(0,[4156,9417,9774,2888,179],function(){return n(n.s=176)}),_N_E=n.O()}]);
