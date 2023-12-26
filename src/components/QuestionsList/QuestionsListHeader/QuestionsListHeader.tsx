@@ -29,10 +29,7 @@ export function QuestionsListHeader({ search, onSearchChange }: QuestionsListHea
           placeholder="Search questions..."
           leftSectionPointerEvents="none"
           leftSection={<IconSearch size={26} stroke={1.5} />}
-          classNames={{
-            input: classes.searchInput,
-            section: classes.searchInputSection,
-          }}
+          classNames={{ input: classes.searchInput }}
           value={search}
           onChange={(event) => onSearchChange(event.currentTarget.value)}
           ref={inputRef}

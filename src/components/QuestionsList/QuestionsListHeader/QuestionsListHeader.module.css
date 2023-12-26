@@ -1,5 +1,5 @@
 .root {
-  background-color: var(--mantine-color-blue-6);
+  background-color: light-dark(var(--mantine-color-blue-6), var(--mantine-color-dark-8));
   padding-top: rem(120px);
   padding-bottom: rem(40px);
 }
@@ -29,16 +29,5 @@
 }
 
 .searchInput {
-  background-color: var(--mantine-color-white);
-  border-color: var(--mantine-color-white);
-  color: var(--mantine-color-black);
   box-shadow: var(--mantine-shadow-md);
-
-  &::placeholder {
-    color: var(--mantine-color-gray-5);
-  }
-}
-
-.searchInputSection {
-  color: var(--mantine-color-gray-5);
 }
