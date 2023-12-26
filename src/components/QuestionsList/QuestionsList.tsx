@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Container } from '@mantine/core';
 import { Frontmatter } from '@/types';
 import { getGroupedQuestions } from './get-grouped-questions';
-import { QuestionsListHeader } from './QuestionsListHeader/QuestionsListHeader';
-import { QuestionsListGroup } from './QuestionsListGroup/QuestionsListGroup';
 import { NothingFound } from './NothingFound/NothingFound';
+import { QuestionsListGroup } from './QuestionsListGroup/QuestionsListGroup';
+import { QuestionsListHeader } from './QuestionsListHeader/QuestionsListHeader';
 
 interface QuestionsListProps {
   data: Frontmatter[];

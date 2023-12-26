@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import Head from 'next/head';
-import { Anchor, Container, Title, Center, Text } from '@mantine/core';
-import { IconPencil, IconBug, IconArrowLeft } from '@tabler/icons-react';
+import Link from 'next/link';
+import { IconArrowLeft, IconBug, IconPencil } from '@tabler/icons-react';
+import { Anchor, Center, Container, Text, Title } from '@mantine/core';
 import { Frontmatter } from '@/types';
 import { PageHeaderLink } from './PageHeaderLink/PageHeaderLink';
 import classes from './MdxLayout.module.css';

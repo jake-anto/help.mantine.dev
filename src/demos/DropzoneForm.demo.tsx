@@ -1,8 +1,8 @@
 import React from 'react';
-import { MantineDemo } from '@mantinex/demo';
-import { useForm } from '@mantine/form';
+import { Center, CloseButton, Text } from '@mantine/core';
 import { Dropzone, MIME_TYPES } from '@mantine/dropzone';
-import { Center, Text, CloseButton } from '@mantine/core';
+import { useForm } from '@mantine/form';
+import { MantineDemo } from '@mantinex/demo';
 
 const code = `
 import { useForm } from '@mantine/form';

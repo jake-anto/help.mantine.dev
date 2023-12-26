@@ -1,17 +1,17 @@
 import Link from 'next/link';
 import cx from 'clsx';
-import { useHotkeys } from '@mantine/hooks';
 import {
+  Anchor,
   AppShell,
   Container,
-  RemoveScroll,
   Group,
-  useMantineColorScheme,
-  Anchor,
+  RemoveScroll,
   Text,
+  useMantineColorScheme,
 } from '@mantine/core';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { useHotkeys } from '@mantine/hooks';
 import { ColorSchemeControl, HeaderControls } from '@mantinex/mantine-header';
+import { MantineLogo } from '@mantinex/mantine-logo';
 import { meta } from '@mantinex/mantine-meta';
 import classes from './Shell.module.css';
 

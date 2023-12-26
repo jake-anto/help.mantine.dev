@@ -1,6 +1,6 @@
 import React from 'react';
+import { Button, Fieldset, TextInput } from '@mantine/core';
 import { MantineDemo } from '@mantinex/demo';
-import { Fieldset, TextInput, Button } from '@mantine/core';
 
 const code = `
 import { Fieldset, TextInput, Button } from '@mantine/core';

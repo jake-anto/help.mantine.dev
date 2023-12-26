@@ -1,10 +1,11 @@
-import '../fonts/GreycliffCF/styles.css';
 import '@mantine/core/styles.css';
 import '@mantine/dropzone/styles.css';
 import '@mantinex/shiki/styles.css';
 import '@mantinex/demo/styles.css';
 import '@mantinex/mantine-logo/styles.css';
 import '@mantinex/mantine-header/styles.css';
+import '../fonts/GreycliffCF/styles.css';
+
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { ShikiProvider } from '@mantinex/shiki';
