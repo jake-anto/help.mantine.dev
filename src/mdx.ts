@@ -5,6 +5,7 @@ import { meta as howToCallFunctionWhenModalCloses } from './pages/q/how-to-call-
 import { meta as howToPreventModalFromClosing } from './pages/q/how-to-prevent-modal-from-closing.mdx';
 import { meta as howToUpdateDependencies } from './pages/q/how-to-update-dependencies.mdx';
 import { meta as howToUseDropzoneWithForm } from './pages/q/how-to-use-dropzone-with-form.mdx';
+import { meta as selectAutocompleteDifference } from './pages/q/select-autocomplete-difference.mdx';
 
 export const MDX_DATA = [
   canIUseMantineWithCra,
@@ -14,4 +15,5 @@ export const MDX_DATA = [
   howToPreventModalFromClosing,
   howToUpdateDependencies,
   howToUseDropzoneWithForm,
+  selectAutocompleteDifference,
 ];
