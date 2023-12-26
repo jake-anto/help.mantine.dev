@@ -1,6 +1,6 @@
 import { Frontmatter } from '@/types';
 
-const categoriesOrder = ['general', 'tooling', 'styles', 'forms', 'components'];
+const categoriesOrder = ['common', 'general', 'tooling', 'styles', 'forms', 'components'];
 
 function isMatched(question: Frontmatter, searchQuery: string) {
   const { title, tags, category, description } = question;

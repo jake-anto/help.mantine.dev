@@ -1,4 +1,5 @@
 import { meta as canIUseMantineWithCra } from './pages/q/can-i-use-mantine-with-cra.mdx';
+import { meta as dataGridINeed } from './pages/q/data-grid-i-need.mdx';
 import { meta as disableAllInputsInForm } from './pages/q/disable-all-inputs-in-form.mdx';
 import { meta as howToAddHoverStyles } from './pages/q/how-to-add-hover-styles.mdx';
 import { meta as howToCallFunctionWhenModalCloses } from './pages/q/how-to-call-function-when-modal-closes.mdx';
@@ -9,6 +10,7 @@ import { meta as selectAutocompleteDifference } from './pages/q/select-autocompl
 
 export const MDX_DATA = [
   canIUseMantineWithCra,
+  dataGridINeed,
   disableAllInputsInForm,
   howToAddHoverStyles,
   howToCallFunctionWhenModalCloses,
