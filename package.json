@@ -16,10 +16,10 @@
     "deploy": "npm run build && gh-pages -d out -t true"
   },
   "dependencies": {
-    "@mantine/core": "7.3.0-alpha.3",
-    "@mantine/dropzone": "7.3.0-alpha.3",
-    "@mantine/form": "7.3.0-alpha.3",
-    "@mantine/hooks": "7.3.0-alpha.3",
+    "@mantine/core": "7.3.2",
+    "@mantine/dropzone": "7.3.2",
+    "@mantine/form": "7.3.2",
+    "@mantine/hooks": "7.3.2",
     "@mantinex/demo": "^1.1.0",
     "@mantinex/dev-icons": "^1.0.2",
     "@mantinex/mantine-header": "^1.0.2",
@@ -62,5 +62,5 @@
     "stylelint-config-standard-scss": "^11.1.0",
     "typescript": "5.2.2"
   },
-  "packageManager": "yarn@4.0.1"
+  "packageManager": "yarn@4.0.2"
 }
