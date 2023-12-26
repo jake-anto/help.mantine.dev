@@ -4,7 +4,7 @@
   background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
   margin-bottom: var(--mantine-spacing-xl);
 
-  @mixin smaller-than $mantine-breakpoint-sm {
+  @mixin smaller-than $sm {
     padding-top: rem(60px);
     padding-bottom: rem(40px);
   }
@@ -17,7 +17,7 @@
   text-wrap: balance;
   color: var(--mantine-color-bright);
 
-  @mixin smaller-than $mantine-breakpoint-sm {
+  @mixin smaller-than $sm {
     font-size: rem(32px);
   }
 }

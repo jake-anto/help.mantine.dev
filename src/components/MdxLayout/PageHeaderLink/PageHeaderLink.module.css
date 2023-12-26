@@ -13,7 +13,7 @@
   color: var(--mantine-color-dimmed);
   flex: 0 0 rem(80px);
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @mixin smaller-than $sm {
     display: none;
   }
 }
@@ -30,7 +30,7 @@
     text-decoration: underline;
   }
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @mixin smaller-than $sm {
     min-height: rem(24px);
   }
 }
