@@ -433,9 +433,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantinex/demo@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@mantinex/demo@npm:1.1.0"
+"@mantinex/demo@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@mantinex/demo@npm:1.1.1"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
@@ -444,7 +444,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     shikiji: ^0.7.4
-  checksum: 22d3d7d759db2cc08664ad2c6af0f03bc1e4407a590cef6a8556ff57c4da4dd32106e060b8c2badb28e2466f375de74f72ef5f1b1b25a065fdb7ce727ab896b3
+  checksum: 65697611b6ca5b56c5e3492ab9ca8a33b429b4c941e4320a82e229b88d17900f744669bb8f40bf53359771c7aaaf40fce48f7c0f85aa2a2e8c048cc1d747927d
   languageName: node
   linkType: hard
 
@@ -486,28 +486,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantinex/mantine-meta@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@mantinex/mantine-meta@npm:1.0.1"
+"@mantinex/mantine-meta@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@mantinex/mantine-meta@npm:1.0.2"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: d25bd8c98f0d911c71a679b3eb9fd7aa5f48900f70d24976d6b323496eee5826405378604fcd5291435656d22d93557f114f4e182967196e23bd564207da71cc
+  checksum: ac51b7da40a6a04eaaa2bbc7e0ba4b475e5981f5add8f064584b20c9f12c1735b608756f41031010df8aa79f4febef8e5871799af2cf725d3a100d89c8a890e0
   languageName: node
   linkType: hard
 
-"@mantinex/shiki@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@mantinex/shiki@npm:1.0.2"
+"@mantinex/shiki@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@mantinex/shiki@npm:1.0.3"
   peerDependencies:
     "@mantine/core": ">=7.0.0"
     "@mantine/hooks": ">=7.0.0"
     react: ^18.2.0
     react-dom: ^18.2.0
     shikiji: ^0.7.4
-  checksum: 52c8e7b1b8eeb4352bb3d2afbe418cfcebc01e76b9257879b013401efd7030c6467056df1c962dc467a5c4008e4626f2610fe29cd68c6ac5da45d97ab5563767
+  checksum: ee32d734c0f8c606250a3ee3312095f51b9859730dd3e886a36409ceba23a948f7f2f691b67bf33191286eb804777645ee73904915930b6007915e6e2fbe91a1
   languageName: node
   linkType: hard
 
@@ -3629,12 +3629,12 @@ __metadata:
     "@mantine/dropzone": "npm:7.3.2"
     "@mantine/form": "npm:7.3.2"
     "@mantine/hooks": "npm:7.3.2"
-    "@mantinex/demo": "npm:^1.1.0"
+    "@mantinex/demo": "npm:^1.1.1"
     "@mantinex/dev-icons": "npm:^1.0.2"
     "@mantinex/mantine-header": "npm:^1.0.2"
     "@mantinex/mantine-logo": "npm:^1.0.1"
-    "@mantinex/mantine-meta": "npm:^1.0.1"
-    "@mantinex/shiki": "npm:^1.0.2"
+    "@mantinex/mantine-meta": "npm:^1.0.2"
+    "@mantinex/shiki": "npm:^1.0.3"
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.2"
@@ -3658,7 +3658,7 @@ __metadata:
     gh-pages: "npm:^6.0.0"
     next: "npm:14.0.2"
     postcss: "npm:^8.4.31"
-    postcss-preset-mantine: "npm:1.11.0"
+    postcss-preset-mantine: "npm:1.12.2"
     postcss-simple-vars: "npm:^7.0.1"
     prettier: "npm:^3.1.0"
     react: "npm:18.2.0"
@@ -5786,15 +5786,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-mantine@npm:1.11.0":
-  version: 1.11.0
-  resolution: "postcss-preset-mantine@npm:1.11.0"
+"postcss-preset-mantine@npm:1.12.2":
+  version: 1.12.2
+  resolution: "postcss-preset-mantine@npm:1.12.2"
   dependencies:
     postcss-mixins: "npm:^9.0.4"
     postcss-nested: "npm:^6.0.1"
   peerDependencies:
     postcss: ">=8.0.0"
-  checksum: 0a3b26c944fb35541e045d9505cce5ad109f9f6e7ecefbacd413e2e7053f230d8fc24e6400eb4cf8fb07f2b17ab7cb588ffacef0df8fd5937b7f399b41013076
+  checksum: 974458944259c0fd73defc7f38d0f9f6216d049d83de74b4c42d97e13696876a24e0e170f6350daf92033915e66fe9c8b02572f44d7d7295be491d6a8ed2f133
   languageName: node
   linkType: hard
 
