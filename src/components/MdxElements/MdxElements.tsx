@@ -3,6 +3,7 @@ import type { MDXComponents } from 'mdx/types';
 import { Anchor, Code, Image, Title } from '@mantine/core';
 import { Demo } from '@mantinex/demo';
 import { CodeHighlight } from '@mantinex/shiki';
+import { MdxInstallScript } from './MdxInstallScript/MdxInstallScript';
 import classes from './MdxElements.module.css';
 
 export function MdxTitle({
@@ -78,6 +79,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h6: h(6),
     pre: MdxPre,
     Demo,
+    InstallScript: MdxInstallScript,
     ...components,
   };
 }

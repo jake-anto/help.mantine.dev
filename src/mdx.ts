@@ -5,6 +5,7 @@ import { meta as howToAddHoverStyles } from './pages/q/how-to-add-hover-styles.m
 import { meta as howToCallFunctionWhenModalCloses } from './pages/q/how-to-call-function-when-modal-closes.mdx';
 import { meta as howToGetColorSchemeValueInJs } from './pages/q/how-to-get-color-scheme-value-in-js.mdx';
 import { meta as howToPreventModalFromClosing } from './pages/q/how-to-prevent-modal-from-closing.mdx';
+import { meta as howToSetupStylelint } from './pages/q/how-to-setup-stylelint.mdx';
 import { meta as howToUpdateDependencies } from './pages/q/how-to-update-dependencies.mdx';
 import { meta as howToUseDropzoneWithForm } from './pages/q/how-to-use-dropzone-with-form.mdx';
 import { meta as selectAutocompleteDifference } from './pages/q/select-autocomplete-difference.mdx';
@@ -17,6 +18,7 @@ export const MDX_DATA = [
   howToCallFunctionWhenModalCloses,
   howToGetColorSchemeValueInJs,
   howToPreventModalFromClosing,
+  howToSetupStylelint,
   howToUpdateDependencies,
   howToUseDropzoneWithForm,
   selectAutocompleteDifference,
