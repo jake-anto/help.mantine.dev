@@ -6,9 +6,10 @@ import classes from './QuestionsListHeader.module.css';
 interface QuestionsListHeaderProps {
   search: string;
   onSearchChange: (value: string) => void;
+  total: number;
 }
 
-export function QuestionsListHeader({ search, onSearchChange }: QuestionsListHeaderProps) {
+export function QuestionsListHeader({ search, onSearchChange, total }: QuestionsListHeaderProps) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -20,7 +21,7 @@ export function QuestionsListHeader({ search, onSearchChange }: QuestionsListHea
       <Container size="md">
         <Title className={classes.title}>Mantine Help Center</Title>
         <Text className={classes.description}>
-          Frequently asked and general questions for Mantine 7.0+
+          {total} frequently asked and general questions for Mantine 7.0+
         </Text>
 
         <TextInput

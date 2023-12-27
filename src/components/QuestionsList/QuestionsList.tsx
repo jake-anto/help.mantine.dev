@@ -20,7 +20,7 @@ export function QuestionsList({ data }: QuestionsListProps) {
 
   return (
     <>
-      <QuestionsListHeader search={search} onSearchChange={setSearch} />
+      <QuestionsListHeader search={search} onSearchChange={setSearch} total={data.length} />
       <Container size="md" mt={50}>
         {groups.length > 0 ? groups : <NothingFound />}
       </Container>
