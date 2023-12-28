@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { IconSearch } from '@tabler/icons-react';
-import { Container, Text, TextInput, Title } from '@mantine/core';
+import { CloseButton, Container, Text, TextInput, Title } from '@mantine/core';
 import classes from './QuestionsListHeader.module.css';
 
 interface QuestionsListHeaderProps {
@@ -30,6 +30,9 @@ export function QuestionsListHeader({ search, onSearchChange, total }: Questions
           placeholder="Search questions..."
           leftSectionPointerEvents="none"
           leftSection={<IconSearch size={26} stroke={1.5} />}
+          rightSection={
+            search.trim().length > 0 && <CloseButton size="lg" onClick={() => onSearchChange('')} />
+          }
           classNames={{ input: classes.searchInput }}
           value={search}
           onChange={(event) => onSearchChange(event.currentTarget.value)}

@@ -1,45 +1,28 @@
+import Fuse from 'fuse.js';
 import { Frontmatter } from '@/types';
 
 const categoriesOrder = ['common', 'general', 'tooling', 'styles', 'forms', 'components'];
 
-function isMatched(question: Frontmatter, searchQuery: string) {
-  const { title, tags, category, description } = question;
-
-  const query = searchQuery.toLowerCase().trim();
-
-  if (title.toLowerCase().includes(query)) {
-    return true;
-  }
-
-  if (category.toLowerCase().includes(query)) {
-    return true;
-  }
-
-  if (description.toLowerCase().includes(query)) {
-    return true;
-  }
-
-  if (tags.some((tag) => tag.toLowerCase().includes(query))) {
-    return true;
-  }
-
-  return false;
-}
-
 export function getGroupedQuestions(questions: Frontmatter[], searchQuery: string) {
-  const grouped = questions.reduce<Record<string, Frontmatter[]>>(
-    (acc, question) => {
-      const { category } = question;
+  const fuse = new Fuse(questions, {
+    keys: ['title', 'tags', 'category', 'description'],
+    threshold: 0.3,
+  });
+
+  const searchResults =
+    searchQuery.trim().length > 0
+      ? fuse.search(searchQuery)
+      : questions.map((question) => ({ item: question }));
+
+  const grouped = searchResults.reduce<Record<string, Frontmatter[]>>(
+    (acc, payload) => {
+      const { category } = payload.item;
 
       if (!acc[category]) {
         acc[category] = [];
       }
 
-      if (searchQuery.trim() && !isMatched(question, searchQuery)) {
-        return acc;
-      }
-
-      acc[category].push(question);
+      acc[category].push(payload.item);
 
       return acc;
     },
