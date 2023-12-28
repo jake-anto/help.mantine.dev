@@ -8,6 +8,7 @@ import { meta as howToPreventModalFromClosing } from './pages/q/how-to-prevent-m
 import { meta as howToSetupStylelint } from './pages/q/how-to-setup-stylelint.mdx';
 import { meta as howToUpdateDependencies } from './pages/q/how-to-update-dependencies.mdx';
 import { meta as howToUseDropzoneWithForm } from './pages/q/how-to-use-dropzone-with-form.mdx';
+import { meta as mantineProviderMissing } from './pages/q/mantine-provider-missing.mdx';
 import { meta as selectAutocompleteDifference } from './pages/q/select-autocomplete-difference.mdx';
 
 export const MDX_DATA = [
@@ -21,5 +22,6 @@ export const MDX_DATA = [
   howToSetupStylelint,
   howToUpdateDependencies,
   howToUseDropzoneWithForm,
+  mantineProviderMissing,
   selectAutocompleteDifference,
 ];
