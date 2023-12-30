@@ -11,6 +11,7 @@ import { meta as howToUseDropzoneWithForm } from './pages/q/how-to-use-dropzone-
 import { meta as mantineProviderMissing } from './pages/q/mantine-provider-missing.mdx';
 import { meta as privateCssVariables } from './pages/q/private-css-variables.mdx';
 import { meta as selectAutocompleteDifference } from './pages/q/select-autocomplete-difference.mdx';
+import { meta as serverComponents } from './pages/q/server-components.mdx';
 
 export const MDX_DATA = [
   canIUseMantineWithCra,
@@ -26,4 +27,5 @@ export const MDX_DATA = [
   mantineProviderMissing,
   privateCssVariables,
   selectAutocompleteDifference,
+  serverComponents,
 ];
