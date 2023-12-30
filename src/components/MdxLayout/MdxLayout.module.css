@@ -25,3 +25,16 @@
 .links {
   margin-top: var(--mantine-spacing-lg);
 }
+
+.inner {
+  --table-of-contents-width: rem(300px);
+
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+  max-width: 100%;
+}

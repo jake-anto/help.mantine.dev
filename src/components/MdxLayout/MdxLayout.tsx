@@ -4,6 +4,7 @@ import { IconArrowLeft, IconBug, IconPencil } from '@tabler/icons-react';
 import { Anchor, Center, Container, Text, Title } from '@mantine/core';
 import { Frontmatter } from '@/types';
 import { PageHeaderLink } from './PageHeaderLink/PageHeaderLink';
+import { TableOfContents } from './TableOfContents';
 import classes from './MdxLayout.module.css';
 
 interface MdxLayoutProps {
@@ -59,7 +60,12 @@ export function MdxLayout({ meta, children }: MdxLayoutProps) {
             </Text>
           </Container>
         </header>
-        <Container size="md">{children}</Container>
+        <Container size="md" className={classes.inner}>
+          <div className={classes.content} id="mdx">
+            {children}
+          </div>
+          <TableOfContents />
+        </Container>
       </article>
     </>
   );
