@@ -1,7 +1,7 @@
 import Fuse from 'fuse.js';
 import { Frontmatter } from '@/types';
 
-const categoriesOrder = ['common', 'next.js', 'tooling', 'styles', 'forms', 'components'];
+const categoriesOrder = ['about', 'common', 'next.js', 'tooling', 'styles', 'forms', 'components'];
 
 export function getGroupedQuestions(questions: Frontmatter[], searchQuery: string) {
   const fuse = new Fuse(questions, {
