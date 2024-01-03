@@ -4,6 +4,7 @@ import { Anchor, Code, Image, Title } from '@mantine/core';
 import { Demo } from '@mantinex/demo';
 import { CodeHighlight } from '@mantinex/shiki';
 import { MdxErrorMessage } from './MdxErrorMessage/MdxErrorMessage';
+import { MdxInfo } from './MdxInfo/MdxInfo';
 import { MdxInstallScript } from './MdxInstallScript/MdxInstallScript';
 import classes from './MdxElements.module.css';
 
@@ -82,6 +83,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Demo,
     InstallScript: MdxInstallScript,
     ErrorMessage: MdxErrorMessage,
+    blockquote: MdxInfo,
     ...components,
   };
 }
