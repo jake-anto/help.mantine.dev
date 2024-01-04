@@ -12,6 +12,7 @@ import { meta as howToSetupStylelint } from './pages/q/how-to-setup-stylelint.md
 import { meta as howToUpdateDependencies } from './pages/q/how-to-update-dependencies.mdx';
 import { meta as howToUseDropzoneWithForm } from './pages/q/how-to-use-dropzone-with-form.mdx';
 import { meta as mantineProviderMissing } from './pages/q/mantine-provider-missing.mdx';
+import { meta as nextLoadFonts } from './pages/q/next-load-fonts.mdx';
 import { meta as privateCssVariables } from './pages/q/private-css-variables.mdx';
 import { meta as selectAutocompleteDifference } from './pages/q/select-autocomplete-difference.mdx';
 import { meta as serverComponents } from './pages/q/server-components.mdx';
@@ -31,6 +32,7 @@ export const MDX_DATA = [
   howToUpdateDependencies,
   howToUseDropzoneWithForm,
   mantineProviderMissing,
+  nextLoadFonts,
   privateCssVariables,
   selectAutocompleteDifference,
   serverComponents,
