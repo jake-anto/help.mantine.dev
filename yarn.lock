@@ -667,6 +667,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantine/dates@npm:7.3.2":
+  version: 7.3.2
+  resolution: "@mantine/dates@npm:7.3.2"
+  dependencies:
+    clsx: "npm:2.0.0"
+  peerDependencies:
+    "@mantine/core": 7.3.2
+    "@mantine/hooks": 7.3.2
+    dayjs: ">=1.0.0"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: dbd980b288a1de691f083ac3837a98c739185f5408fdc11a905689cf96725aeb90bca5be351f33f8726b8ff110f71a0807214959a9a7d542239daedd5ef16d12
+  languageName: node
+  linkType: hard
+
 "@mantine/dropzone@npm:7.3.2":
   version: 7.3.2
   resolution: "@mantine/dropzone@npm:7.3.2"
@@ -2197,6 +2212,13 @@ __metadata:
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
   checksum: 4c2647e0f42acaee7d068756c1d396e296c3556f9c8314bac1ac63ffb236217ef0e7e58602b18bb2173deec7ec8e0cac8e27cccf8f5526666b4ff11a13ad54a3
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.11.10":
+  version: 1.11.10
+  resolution: "dayjs@npm:1.11.10"
+  checksum: 4de9af50639d47df87f2e15fa36bb07e0f9ed1e9c52c6caa1482788ee9a384d668f1dbd00c54f82aaab163db07d61d2899384b8254da3a9184fc6deca080e2fe
   languageName: node
   linkType: hard
 
@@ -3998,6 +4020,7 @@ __metadata:
   dependencies:
     "@ianvs/prettier-plugin-sort-imports": "npm:^4.1.1"
     "@mantine/core": "npm:7.3.2"
+    "@mantine/dates": "npm:7.3.2"
     "@mantine/dropzone": "npm:7.3.2"
     "@mantine/form": "npm:7.3.2"
     "@mantine/hooks": "npm:7.3.2"
@@ -4018,6 +4041,7 @@ __metadata:
     "@types/react-dom": "npm:18.2.15"
     "@typescript-eslint/eslint-plugin": "npm:^6.11.0"
     "@typescript-eslint/parser": "npm:^6.11.0"
+    dayjs: "npm:^1.11.10"
     eslint: "npm:^8.53.0"
     eslint-config-airbnb: "npm:19.0.4"
     eslint-config-airbnb-typescript: "npm:^17.1.0"
