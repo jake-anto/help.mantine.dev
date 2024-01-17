@@ -16,6 +16,7 @@ import { meta as nextLoadFonts } from './pages/q/next-load-fonts.mdx';
 import { meta as privateCssVariables } from './pages/q/private-css-variables.mdx';
 import { meta as selectAutocompleteDifference } from './pages/q/select-autocomplete-difference.mdx';
 import { meta as serverComponents } from './pages/q/server-components.mdx';
+import { meta as viteLoadFonts } from './pages/q/vite-load-fonts.mdx';
 
 export const MDX_DATA = [
   canIUseMantineWithAstro,
@@ -36,4 +37,5 @@ export const MDX_DATA = [
   privateCssVariables,
   selectAutocompleteDifference,
   serverComponents,
+  viteLoadFonts,
 ];
