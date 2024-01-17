@@ -1,6 +1,7 @@
 import { meta as canIUseMantineWithAstro } from './pages/q/can-i-use-mantine-with-astro.mdx';
 import { meta as canIUseMantineWithCra } from './pages/q/can-i-use-mantine-with-cra.mdx';
 import { meta as dataGridINeed } from './pages/q/data-grid-i-need.mdx';
+import { meta as datesMissingStyles } from './pages/q/dates-missing-styles.mdx';
 import { meta as disableAllInputsInForm } from './pages/q/disable-all-inputs-in-form.mdx';
 import { meta as dynamicCssStyles } from './pages/q/dynamic-css-styles.mdx';
 import { meta as floatingActionButton } from './pages/q/floating-action-button.mdx';
@@ -24,6 +25,7 @@ export const MDX_DATA = [
   canIUseMantineWithAstro,
   canIUseMantineWithCra,
   dataGridINeed,
+  datesMissingStyles,
   disableAllInputsInForm,
   dynamicCssStyles,
   floatingActionButton,
