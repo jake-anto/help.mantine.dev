@@ -23,10 +23,30 @@ async function loadShiki() {
 }
 
 export default function App({ Component, pageProps }: any) {
+  const title = 'Help Center | Mantine';
   return (
     <MantineProvider theme={theme}>
       <Head>
-        <title>Help Center | Mantine</title>
+        <title>{title}</title>
+        <meta itemProp="name" content={title} key="item-title" />
+        <meta property="og:title" content={title} key="og-title" />
+        <meta name="twitter:title" content={title} key="twitter-title" />
+        <meta property="og:url" content="https://help.mantine.dev/" key="og-url" />
+        <meta
+          name="description"
+          content="Frequently asked questions and in-depth guides for Mantine"
+        />
+        <meta
+          itemProp="description"
+          content="Frequently asked questions and in-depth guides for Mantine"
+        />
+        <meta
+          itemProp="image"
+          content="http://raw.githubusercontent.com/mantinedev/mantine/master/.demo/social-preview.png"
+        />
+        <meta name="keywords" content="react,mantine,faq" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
@@ -39,6 +59,10 @@ export default function App({ Component, pageProps }: any) {
         <meta name="twitter:creator" content="@mantinedev" />
         <meta
           name="og:image"
+          content="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/social-preview.png"
+        />
+        <meta
+          name="twitter:image"
           content="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/social-preview.png"
         />
       </Head>

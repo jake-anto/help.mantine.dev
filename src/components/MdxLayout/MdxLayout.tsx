@@ -13,10 +13,15 @@ interface MdxLayoutProps {
 }
 
 export function MdxLayout({ meta, children }: MdxLayoutProps) {
+  const title = `${meta.title} | Mantine`;
   return (
     <>
       <Head>
-        <title>{`${meta.title} | Mantine`}</title>
+        <title>{title}</title>
+        <meta itemProp="name" content={title} key="item-title" />
+        <meta property="og:title" content={title} key="og-title" />
+        <meta name="twitter:title" content={title} key="twitter-title" />
+        <meta property="og:url" content={`https://help.mantine.dev/q/${meta.slug}`} key="og-url" />
       </Head>
       <article>
         <header className={classes.header}>
