@@ -33,7 +33,7 @@ export function Shell({ children }: ShellProps) {
 
           <HeaderControls
             visibleFrom="sm"
-            githubLink="https://github.com/mantine.dev/mantine"
+            githubLink="https://github.com/mantinedev/help.mantine.dev"
             withDirectionToggle={false}
             withSearch={false}
             discordLink={meta.discordLink}
